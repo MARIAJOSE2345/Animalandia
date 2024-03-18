@@ -1,0 +1,41 @@
+{
+  "name": "animalandia",
+  "version": "1.0.0",
+  "description": "Tienda virtual de productos para mascotas",
+  "main": "server.js",
+  "scripts": {
+    "start": "node back/server.js",
+    "dev": "export NODE_ENV=DEVELOPMENT&& nodemon back/server"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MARIAJOSE2345/animalandia.git"
+  },
+  "author": "Maria Jose Munoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MARIAJOSE2345/animalandia/issues"
+  },
+  "homepage": "https://github.com/MARIAJOSE2345/animalandia#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cloudinary": "^1.32.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.4",
+    "node-fetch": "^3.2.10",
+    "nodemailer": "^6.8.0",
+    "react-scripts": "^5.0.1",
+    "validator": "^13.7.0",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
