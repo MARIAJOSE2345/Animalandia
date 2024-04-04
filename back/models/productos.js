@@ -3,19 +3,19 @@ const mongoose=require("mongoose")
 const productosSchema=mongoose.Schema({
     nombre:{
         type:String,
-        required:[true,"Por favor registra el nombre del producto."],
+        required:[true,"Ingrese el nombre del producto."],
         trim:true,
         maxLength:[120,"El nombre del producto no debe exceder los 120 caracteres."]
     },
     precio:{
         type: Number,
-        required:[true,"Por favor registre el precio del producto."],
-        maxLength:[8, "El precio del producto no puede estar por encima de 99'999.999"],
+        required:[true,"Ingrese el precio del producto."],
+        maxLength:[8, "El precio del producto no puede estar por encima de 5'000.000"],
         default: 0.0
     },
     descripcion:{
       type:String,
-      required:[true,"Por favor registre una descripcion para el producto."]
+      required:[true,"Por favor realice una breve descripcion del producto."]
     },
     calificacion:{
         type: Number,
@@ -35,7 +35,7 @@ const productosSchema=mongoose.Schema({
     ],
     categoria:{
         type:String,
-        required:[true,"Por favor seleccione la categoria del producto."],
+        required:[true,"Seleccione la categoria del producto."],
         enum:{
             values:[
                 "Alimento seco",
@@ -50,12 +50,12 @@ const productosSchema=mongoose.Schema({
     },
     vendedor:{
         type:String,
-        required:[true,"Por favor registre el vendedor de producto"]
+        required:[true,"Por favor ingrese el nombre del vendedor del producto"]
     },
     inventario:{
         type: Number,
         required:[true, "Por favor registre el stock del producto"],
-        maxLength:[5,"Cantidad maxima del producto no puede sobrepasar 99999"],
+        maxLength:[5,"La cantidad maxima del producto no puede sobrepasar las 1000 unidades"],
         default:0
     },
     numCalificaciones:{

@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# DESCRIPCIÓN DEL PROYECTO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Animalandia es una página web dedicada a la venta de productos para mascotas, pensada inicialmete en gatos, perros y conejos. La idea de la tienda surgió a partir de una necesidad propia ya que tenemos varias mascotas; sabemos que es realmente difícil encontrar productos de buena calidad a precios cómodos. Esta tienda es creada especificamente para satisfacer las necesidades de los usuarios en cuanto a la relación calidad-precio, como empresa queremos contribuir al cuidado, bienestar y buena calidad de vida de los peluditos.    
 
-## Available Scripts
+# EJECUCIÓN DE LA APLICACIÓN CREADA CON REACT JS
 
-In the project directory, you can run:
+El front-end se ejecuta en el puerto 3000.
+El back-end se ejecuta en el puerto 4000.
 
-### `npm start`
+Para ver la aplicación debe abrir el http://localhost:3000 en el navegador de su prefencia. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# COMANDOS PARA EJECUTAR EL PROYECTO
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 'npm start'
 
-### `npm test`
+Este comando es para ejecutar la aplicación, debe abrir una terminal donde va a ejecutar el comando npm start, el comando sirve para iniciar la ejecución del servidor del back-end y se conecta también a la base de datos.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 'cd'
 
-### `npm run build`
+Comando que nos indica que parte del proyecto vamos a ejecutar. Debe abrir una nueva consola y ejecutar el comando cd front, lo ubicará en la carpeta del front-end y luego ejecuta nuevamente el comando npm start, se abre el navegador y allí podrá visualizar toda la aplicación.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# DESCRIPCIÓN DE LA APLICACIÓN
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+La aplicación cuenta con su respectivo logo y varios botones. Al lado derecho del logo hay un botón de búsqueda de productos en caso de que el usuario busque algo específico. El botón de login tiene la opción de iniciar sesión, registrar nuevo usuario y reestablecer contraseña. El usuario puede observar los productos disponibles, comentarios y calificaciones que han dejado otros usuarios sobre los productos. La aplicación cuenta con dos tipos de roles, administrador y usuario. El usuario pueden escoger un avatar para su perfil en caso que lo desee, podrá dejar comentarios y calificaciones en los productos únicamente si está registrado, tiene la opción de visualizar sus pedidos, estados de las compras que ha realizado y también puede actualizar sus datos personales. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Cada producto cuenta con una descripción, presentación y estado; que puede ser existente o agotado. El usuario tiene la opción de agregar la cantidad de productos que desee al carrito, en caso de querer realizar una compra debe estar registrado, llenar un formulario de envío y la forma de pago. El administrador tiene la opción de ver la cantidad total de ventas, cantidad de productos disponibles y agotados, cantidad de usuarios registrados y los pedidos que han realizado los usuarios. También tiene la opción de crear, eliminar y actualizar los productos dentro de la página; cambiar el estado de los pedidos a procesado, enviado o entregado, eliminar usuarios y ver las opciones de los productos. 

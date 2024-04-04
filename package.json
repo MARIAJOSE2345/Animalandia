@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MARIAJOSE2345/animalandia.git"
+    "url": "https://github.com/MARIAJOSE2345/Proyecto"
   },
-  "author": "Maria Jose Muñoz",
+  "author": "Maria Jose Muñoz Avila",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MARIAJOSE2345/issues"
   },
-  "homepage": "https://MARIAJOSE2345/animalandia#readme",
+  "homepage": "https://MARIAJOSE2345/Proyecto#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.1",

@@ -34,7 +34,7 @@ export const ProcessOrder = () => {
 
 
         if (isUpdated) {
-            alert.success('Orden Actualizada Correctamente');
+            alert.success('Orden actualizada correctamente');
             dispatch({ type: UPDATE_ORDER_RESET })
         }
 

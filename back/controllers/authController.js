@@ -35,7 +35,7 @@ exports.loginUser = catchAsyncErrors(async(req, res, next)=>{
 
     //revisar si los campos estan completos
     if (!email || !password){
-        return next(new ErrorHandler("Por favor ingrese email & Contraseña", 400))
+        return next(new ErrorHandler("Por favor ingrese su email y una contraseña", 400))
     }
 
     //Buscar al usuario en nuestra base de datos
@@ -73,7 +73,7 @@ exports.forgotPassword = catchAsyncErrors ( async( req, res, next) =>{
     const user= await User.findOne({email: req.body.email});
 
     if (!user){
-        return next(new ErrorHandler("Usuario no se encuentra registrado", 404))
+        return next(new ErrorHandler("El usuario no se encuentra registrado", 404))
     }
     const resetToken= user.genResetPasswordToken();
     
@@ -89,7 +89,7 @@ exports.forgotPassword = catchAsyncErrors ( async( req, res, next) =>{
     try{
         await sendEmail({
             email:user.email,
-            subject: "Animalandia Recuperación de la contraseña",
+            subject: "Recuperación de la contraseña",
             mensaje
         })
         res.status(200).json({
@@ -121,7 +121,7 @@ exports.resetPassword = catchAsyncErrors(async (req,res,next) =>{
     }
     //Diligenciamos bien los campos?
     if(req.body.password!==req.body.confirmPassword){
-        return next(new ErrorHandler("Contraseñas no coinciden",400))
+        return next(new ErrorHandler("Las contraseñas no coinciden",400))
     }
 
     //Setear la nueva contraseña
